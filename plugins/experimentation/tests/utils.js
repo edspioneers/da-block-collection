@@ -1,4 +1,7 @@
+/* eslint-disable import/no-unresolved */
+// AI Generated Code by Deloitte + Cursor (BEGIN)
 import { expect } from '@playwright/test';
+// AI Generated Code by Deloitte + Cursor (END)
 
 async function waitForNamespace(page, namespace) {
   await expect(async () => {

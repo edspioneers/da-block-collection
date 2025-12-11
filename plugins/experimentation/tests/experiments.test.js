@@ -1,5 +1,7 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved */
+// AI Generated Code by Deloitte + Cursor (BEGIN)
 import { test, expect } from '@playwright/test';
+// AI Generated Code by Deloitte + Cursor (END)
 import { track } from './coverage.js';
 import { goToAndRunExperiment, waitForDomEvent } from './utils.js';
 
