@@ -141,6 +141,15 @@
           }
         },
         {
+          "title": "Custom Hero",
+          "id": "customhero",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"customhero\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h1></h1></div></div></div>"
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
@@ -195,6 +204,17 @@
           "plugins": {
             "da": {
               "unsafeHTML": "<div><div><p></p></div><div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Test Custom",
+          "id": "testcustom",
+          "plugins": {
+            "da": {
+              "name": "testcustom",
+              "rows": 1,
+              "columns": 2
             }
           }
         },

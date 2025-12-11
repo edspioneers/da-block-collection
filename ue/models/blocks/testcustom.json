@@ -1,0 +1,37 @@
+{
+  "definitions": [
+    {
+      "title": "Test Custom",
+      "id": "testcustom",
+      "plugins": {
+        "da": {
+          "name": "testcustom",
+          "rows": 1,
+          "columns": 2
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "testcustom",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "div:nth-child(1)",
+          "label": "Quotation",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "div:nth-child(2)",
+          "label": "Attribution",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
+

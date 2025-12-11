@@ -12,6 +12,7 @@
       "cards",
       "carousel",
       "columns",
+      "customhero",
       "embed",
       "fragment",
       "form",
@@ -21,6 +22,7 @@
       "search",
       "tabs",
       "table",
+      "testcustom",
       "text",
       "video"
     ]
