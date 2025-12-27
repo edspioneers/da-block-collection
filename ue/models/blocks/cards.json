@@ -24,6 +24,22 @@
   ],
   "models": [
     {
+      "id": "cards",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "card",
       "fields": [
         {

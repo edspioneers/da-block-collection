@@ -1,7 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved */
-// AI Generated Code by Deloitte + Cursor (BEGIN)
+/* eslint-disable import/no-extraneous-dependencies */
 import { test, expect } from '@playwright/test';
-// AI Generated Code by Deloitte + Cursor (END)
 import { track } from './coverage.js';
 
 track(test);

@@ -1,4 +1,3 @@
-// AI Generated Code by Deloitte + Cursor (BEGIN)
 module.exports = {
   root: true,
   extends: 'airbnb-base',
@@ -19,14 +18,4 @@ module.exports = {
       js: 'always',
     }],
   },
-  overrides: [
-    {
-      files: ['playwright.config.js', 'tests/**/*.js'],
-      rules: {
-        'import/no-unresolved': 'off',
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-  ],
 };
-// AI Generated Code by Deloitte + Cursor (END)

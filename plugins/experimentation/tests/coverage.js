@@ -1,7 +1,5 @@
-// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved
-// AI Generated Code by Deloitte + Cursor (BEGIN)
+// eslint-disable-next-line import/no-extraneous-dependencies
 import MCR from 'monocart-coverage-reports';
-// AI Generated Code by Deloitte + Cursor (END)
 
 const coverageReport = MCR({
   name: 'AEM Experimentation Plugin Coverage Report',

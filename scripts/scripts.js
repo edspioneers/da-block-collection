@@ -17,11 +17,6 @@ import {
   toCamelCase,
 } from './aem.js';
 
-// AI Generated Code by Deloitte + Cursor (BEGIN)
-// DA (Dark Alley) origin for sidekick plugins
-export const NX_ORIGIN = 'https://da.live/nx';
-// AI Generated Code by Deloitte + Cursor (END)
-
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
