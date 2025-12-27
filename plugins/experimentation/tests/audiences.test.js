@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved */
 import { test, expect } from '@playwright/test';
 import { track } from './coverage.js';
 import { goToAndRunAudience, waitForDomEvent } from './utils.js';

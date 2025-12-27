@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import { expect } from '@playwright/test';
 
 async function waitForNamespace(page, namespace) {
