@@ -56,7 +56,9 @@
               "rows": 1,
               "columns": 2
             }
-          }
+          },
+          "filter": "accordion",
+          "model": "accordion"
         },
         {
           "title": "Accordion Item",
@@ -97,7 +99,9 @@
             "da": {
               "unsafeHTML": "<div class=\"carousel\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
             }
-          }
+          },
+          "filter": "carousel",
+          "model": "carousel"
         },
         {
           "title": "Carousel Slide",
@@ -118,7 +122,9 @@
               "columns": 2,
               "behaviour": "columns"
             }
-          }
+          },
+          "filter": "columns",
+          "model": "columns"
         },
         {
           "title": "Columns Row",
@@ -141,13 +147,38 @@
           }
         },
         {
+          "title": "Embed",
+          "id": "embed",
+          "plugins": {
+            "da": {
+              "name": "embed",
+              "rows": 1,
+              "columns": 1
+            }
+          },
+          "model": "embed"
+        },
+        {
+          "title": "Form",
+          "id": "form",
+          "plugins": {
+            "da": {
+              "name": "form",
+              "rows": 1,
+              "columns": 1
+            }
+          },
+          "model": "form"
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
             "da": {
               "unsafeHTML": "<div class=\"fragment\"><div><div><p><a href=\"\">Fragment URL</a></p></div></div></div>"
             }
-          }
+          },
+          "model": "fragment"
         },
         {
           "title": "Hero",
