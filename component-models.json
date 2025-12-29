@@ -290,5 +290,23 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "testcustom",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "div:nth-child(1)>div:nth-child(1)",
+        "label": "Quotation",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "div:nth-child(2)>div:nth-child(1)",
+        "label": "Attribution",
+        "valueType": "string"
+      }
+    ]
   }
 ]

@@ -208,6 +208,18 @@
               "columns": 1
             }
           }
+        },
+        {
+          "title": "Test Custom",
+          "id": "testcustom",
+          "plugins": {
+            "da": {
+              "name": "testcustom",
+              "rows": 2,
+              "columns": 1
+            }
+          },
+          "model": "testcustom"
         }
       ]
     }
