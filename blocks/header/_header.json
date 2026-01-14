@@ -5,7 +5,9 @@
       "id": "header",
       "plugins": {
         "da": {
-          "unsafeHTML": "<div class=\"header\"><div><div></div></div></div>"
+          "name": "header",
+          "rows": 1,
+          "columns": 2
         }
       }
     }
