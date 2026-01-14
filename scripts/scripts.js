@@ -19,8 +19,41 @@ import {
 
 // AI Generated Code by Deloitte + Cursor (BEGIN)
 // DA (Dark Alley) origin for sidekick plugins
-export const NX_ORIGIN = 'https://da.live/nx';
+//export const NX_ORIGIN = 'https://da.live/nx';
 // AI Generated Code by Deloitte + Cursor (END)
+
+/**
+ * Moves all the attributes from a given elmenet to another given element.
+ * @param {Element} from the element to copy attributes from
+ * @param {Element} to the element to copy attributes to
+ */export function moveAttributes(from, to, attributes) {
+  if (!attributes) {
+    // eslint-disable-next-line no-param-reassign
+    attributes = [...from.attributes].map(({ nodeName }) => nodeName);
+  }
+  attributes.forEach((attr) => {
+    const value = from.getAttribute(attr);
+    if (value) {
+      to.setAttribute(attr, value);
+      from.removeAttribute(attr);
+    }
+  });
+}
+
+/**
+ * Move instrumentation attributes from a given element to another given element.
+ * @param {Element} from the element to copy attributes from
+ * @param {Element} to the element to copy attributes to
+ */
+export function moveInstrumentation(from, to) {
+  moveAttributes(
+    from,
+    to,
+    [...from.attributes]
+      .map(({ nodeName }) => nodeName)
+      .filter((attr) => attr.startsWith('data-aue-') || attr.startsWith('data-richtext-')),
+  );
+}
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -223,7 +256,7 @@ if (window.location.hostname.includes('ue.da.live')) {
 
 loadPage();
 
-(function da() {
+/*(function da() {
   const { searchParams } = new URL(window.location.href);
 
   const lp = searchParams.get('dapreview');
@@ -233,4 +266,20 @@ loadPage();
   const exp = searchParams.get('daexperiment');
   // eslint-disable-next-line import/no-unresolved
   if (exp) import('https://da.live/nx/public/plugins/exp/exp.js');
+}());*/
+
+const { searchParams, origin } = new URL(window.location.href);
+const branch = searchParams.get('nx') || 'main';
+
+export const NX_ORIGIN = branch === 'local' || origin.includes('localhost') ? 'http://localhost:6456/nx' : 'https://da.live/nx';
+
+(async function loadDa() {
+  /* eslint-disable import/no-unresolved */
+  if (searchParams.get('dapreview')) {
+    import('https://da.live/scripts/dapreview.js')
+      .then(({ default: daPreview }) => daPreview(loadPage));
+  }
+  if (searchParams.get('daexperiment')) {
+    import(`${NX_ORIGIN}/public/plugins/exp/exp.js`);
+  }
 }());
