@@ -173,9 +173,7 @@
           "id": "footer",
           "plugins": {
             "da": {
-              "name": "footer",
-              "rows": 1,
-              "columns": 2
+              "unsafeHTML": "<div class=\"footer\"><div><div><p>Footer content</p></div></div></div>"
             }
           }
         },
@@ -194,9 +192,7 @@
           "id": "header",
           "plugins": {
             "da": {
-              "name": "header",
-              "rows": 1,
-              "columns": 2
+              "unsafeHTML": "<div class=\"header\"><div><div><p>Header content</p></div></div></div>"
             }
           }
         },
