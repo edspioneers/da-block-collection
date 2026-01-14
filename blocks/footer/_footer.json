@@ -5,9 +5,7 @@
       "id": "footer",
       "plugins": {
         "da": {
-          "name": "footer",
-          "rows": 1,
-          "columns": 1
+          "unsafeHTML": "<div class=\"footer\"><div><div></div></div></div>"
         }
       }
     }
