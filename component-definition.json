@@ -169,6 +169,17 @@
           "model": "form"
         },
         {
+          "title": "Footer",
+          "id": "footer",
+          "plugins": {
+            "da": {
+              "name": "footer",
+              "rows": 1,
+              "columns": 1
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
@@ -177,6 +188,17 @@
             }
           },
           "model": "fragment"
+        },
+        {
+          "title": "Header",
+          "id": "header",
+          "plugins": {
+            "da": {
+              "name": "header",
+              "rows": 1,
+              "columns": 1
+            }
+          }
         },
         {
           "title": "Hero",
