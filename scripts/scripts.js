@@ -19,7 +19,7 @@ import {
 
 // AI Generated Code by Deloitte + Cursor (BEGIN)
 // DA (Dark Alley) origin for sidekick plugins
-//export const NX_ORIGIN = 'https://da.live/nx';
+// export const NX_ORIGIN = 'https://da.live/nx';
 // AI Generated Code by Deloitte + Cursor (END)
 
 /**
@@ -256,17 +256,17 @@ if (window.location.hostname.includes('ue.da.live')) {
 
 loadPage();
 
-/*(function da() {
-  const { searchParams } = new URL(window.location.href);
+// (function da() {
+ // const { searchParams } = new URL(window.location.href);
 
-  const lp = searchParams.get('dapreview');
+ // const lp = searchParams.get('dapreview');
   // eslint-disable-next-line import/no-unresolved
-  if (lp) import('https://da.live/scripts/dapreview.js').then((mod) => mod.default(loadPage));
+  //if (lp) import('https://da.live/scripts/dapreview.js').then((mod) => mod.default(loadPage));
 
-  const exp = searchParams.get('daexperiment');
+  // const exp = searchParams.get('daexperiment');
   // eslint-disable-next-line import/no-unresolved
-  if (exp) import('https://da.live/nx/public/plugins/exp/exp.js');
-}());*/
+  // if (exp) import('https://da.live/nx/public/plugins/exp/exp.js');
+// }());
 
 const { searchParams, origin } = new URL(window.location.href);
 const branch = searchParams.get('nx') || 'main';
