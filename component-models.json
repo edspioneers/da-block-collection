@@ -64,22 +64,6 @@
     ]
   },
   {
-    "id": "accordion",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "accordion-item",
     "fields": [
       {

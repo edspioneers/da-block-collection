@@ -5,21 +5,22 @@
       "id": "accordion",
       "plugins": {
         "da": {
-          "unsafeHTML": "<div class=\"accordion\"><div><div></div><div></div></div></div>"
+          "name": "accordion",
+          "rows": 1,
+          "columns": 2
         }
-      },
-      "filter": "accordion",
-      "model": "accordion"
+      }
     },
     {
       "title": "Accordion Item",
       "id": "accordion-item",
       "plugins": {
         "da": {
-          "unsafeHTML": "<div><div></div><div></div></div>"
+          "name": "accordion-item",
+          "rows": 2,
+          "columns": 0
         }
-      },
-      "model": "accordion-item"
+      }
     }
   ],
   "models": [
