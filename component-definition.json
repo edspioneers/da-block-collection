@@ -154,7 +154,8 @@
             "da": {
               "unsafeHTML": "<!-- AI Generated Code by Deloitte + Cursor (BEGIN) --><div class=\"form-thank-you\"><div><div><h1>Thank You!</h1></div></div><div><div><p>Your submission has been received.</p></div></div><div><div><p><a href=\"/\" class=\"button\">Return Home</a></p></div></div></div><!-- AI Generated Code by Deloitte + Cursor (END) -->"
             }
-          }
+          },
+          "model": "form-thank-you"
         },
         {
           "title": "Fragment",
