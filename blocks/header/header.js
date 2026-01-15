@@ -1,4 +1,4 @@
-import { fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
+import { fetchPlaceholders, getMetadata, readBlockConfig } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
@@ -57,6 +57,11 @@ function focusNavSection() {
  * @param {Boolean} expanded Whether the element should be expanded or collapsed
  */
 function toggleAllNavSections(sections, expanded = false) {
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  if (!sections) {
+    return;
+  }
+  // AI Generated Code by Deloitte + Cursor (END)
   sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', expanded);
   });
@@ -69,6 +74,14 @@ function toggleAllNavSections(sections, expanded = false) {
  * @param {*} forceExpanded Optional param to force nav expand behavior when not null
  */
 function toggleMenu(nav, navSections, forceExpanded = null) {
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  if (!nav || !navSections) {
+    if (nav) {
+      nav.setAttribute('aria-expanded', 'false');
+    }
+    return;
+  }
+  // AI Generated Code by Deloitte + Cursor (END)
   const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
   const button = nav.querySelector('.nav-hamburger button');
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
@@ -117,9 +130,17 @@ function getDirectTextContent(menuItem) {
 async function buildBreadcrumbsFromNavTree(nav, currentUrl) {
   const crumbs = [];
 
-  const homeUrl = document.querySelector('.nav-brand a[href]').href;
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  const navBrandLink = document.querySelector('.nav-brand a[href]');
+  const homeUrl = navBrandLink ? navBrandLink.href : new URL('/', window.location).href;
+  // AI Generated Code by Deloitte + Cursor (END)
 
-  let menuItem = Array.from(nav.querySelectorAll('a')).find((a) => a.href === currentUrl);
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  let menuItem = null;
+  if (nav) {
+    menuItem = Array.from(nav.querySelectorAll('a')).find((a) => a.href === currentUrl);
+  }
+  // AI Generated Code by Deloitte + Cursor (END)
   if (menuItem) {
     do {
       const link = menuItem.querySelector(':scope > a');
@@ -173,10 +194,25 @@ async function buildBreadcrumbs() {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  const config = readBlockConfig(block);
+  const fragmentOverride = config.fragment || config.path || '';
+  // AI Generated Code by Deloitte + Cursor (END)
   // load nav as fragment
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  const navPath = fragmentOverride
+    ? new URL(fragmentOverride, window.location).pathname
+    : (navMeta ? new URL(navMeta, window.location).pathname : '/nav');
+  // AI Generated Code by Deloitte + Cursor (END)
   const fragment = await loadFragment(navPath);
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  if (!fragment) {
+    // eslint-disable-next-line no-console
+    console.warn(`Header fragment not found at ${navPath}`);
+    return;
+  }
+  // AI Generated Code by Deloitte + Cursor (END)
 
   // decorate nav DOM
   block.textContent = '';
@@ -191,11 +227,15 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  // AI Generated Code by Deloitte + Cursor (BEGIN)
+  if (navBrand) {
+    const brandLink = navBrand.querySelector('.button');
+    if (brandLink) {
+      brandLink.className = '';
+      brandLink.closest('.button-container').className = '';
+    }
   }
+  // AI Generated Code by Deloitte + Cursor (END)
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
