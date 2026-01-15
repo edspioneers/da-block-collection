@@ -76,9 +76,7 @@
             "da": {
               "unsafeHTML": "<div class=\"cards\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
             }
-          },
-          "filter": "cards",
-          "model": "cards"
+          }
         },
         {
           "title": "Card",
@@ -97,9 +95,7 @@
             "da": {
               "unsafeHTML": "<div class=\"carousel\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
             }
-          },
-          "filter": "carousel",
-          "model": "carousel"
+          }
         },
         {
           "title": "Carousel Slide",
@@ -120,9 +116,7 @@
               "columns": 2,
               "behaviour": "columns"
             }
-          },
-          "filter": "columns",
-          "model": "columns"
+          }
         },
         {
           "title": "Columns Row",
@@ -145,40 +139,13 @@
           }
         },
         {
-          "title": "Embed",
-          "id": "embed",
-          "plugins": {
-            "da": {
-              "name": "embed",
-              "rows": 1,
-              "columns": 1
-            }
-          },
-          "model": "embed"
-        },
-        {
-          "title": "Form",
-          "id": "form",
-          "plugins": {
-            "da": {
-              "name": "form",
-              "rows": 1,
-              "columns": 1
-            }
-          },
-          "model": "form"
-        },
-        {
           "title": "Footer",
           "id": "footer",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"footer\"><div><div><p>Footer content</p></div></div></div>"
+              "unsafeHTML": "<div class=\"footer\"><div><!-- AI Generated Code by Deloitte + Cursor (BEGIN) --><div><p>Fragment</p></div><div><p><a href=\"\">/footer</a></p></div><!-- AI Generated Code by Deloitte + Cursor (END) --></div></div>"
             }
-          },
-          // AI Generated Code by Deloitte + Cursor (BEGIN)
-          "model": "footer"
-          // AI Generated Code by Deloitte + Cursor (END)
+          }
         },
         {
           "title": "Fragment",
@@ -187,20 +154,16 @@
             "da": {
               "unsafeHTML": "<div class=\"fragment\"><div><div><p><a href=\"\">Fragment URL</a></p></div></div></div>"
             }
-          },
-          "model": "fragment"
+          }
         },
         {
           "title": "Header",
           "id": "header",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"header\"><div><div><p>Header content</p></div></div></div>"
+              "unsafeHTML": "<div class=\"header\"><div><!-- AI Generated Code by Deloitte + Cursor (BEGIN) --><div><p>Fragment</p></div><div><p><a href=\"\">/nav</a></p></div><!-- AI Generated Code by Deloitte + Cursor (END) --></div></div>"
             }
-          },
-          // AI Generated Code by Deloitte + Cursor (BEGIN)
-          "model": "header"
-          // AI Generated Code by Deloitte + Cursor (END)
+          }
         },
         {
           "title": "Hero",
@@ -261,18 +224,6 @@
               "columns": 1
             }
           }
-        },
-        {
-          "title": "Test Custom",
-          "id": "testcustom",
-          "plugins": {
-            "da": {
-              "name": "testcustom",
-              "rows": 2,
-              "columns": 1
-            }
-          },
-          "model": "testcustom"
         }
       ]
     }
