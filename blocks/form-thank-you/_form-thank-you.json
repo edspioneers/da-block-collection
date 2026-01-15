@@ -16,25 +16,29 @@
       "fields": [
         {
           "component": "text",
-          "name": "div:nth-child(1)>div:nth-child(1)>h1:nth-child(1)",
+          "name": "div:nth-child(1)>div:nth-child(1)>h1",
           "label": "Heading",
-          "required": true
+          "required": true,
+          "valueType": "string"
         },
         {
           "component": "richtext",
           "name": "div:nth-child(2)>div:nth-child(1)",
           "label": "Message",
-          "required": true
+          "required": true,
+          "valueType": "string"
         },
         {
           "component": "text",
-          "name": "div:nth-child(3)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]",
-          "label": "Button URL"
+          "name": "div:nth-child(3)>div:nth-child(1)>p>a[href]",
+          "label": "Button URL",
+          "valueType": "string"
         },
         {
           "component": "text",
-          "name": "div:nth-child(3)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)",
-          "label": "Button Text"
+          "name": "div:nth-child(3)>div:nth-child(1)>p>a",
+          "label": "Button Text",
+          "valueType": "string"
         }
       ]
     }
