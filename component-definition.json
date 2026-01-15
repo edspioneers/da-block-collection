@@ -175,7 +175,10 @@
             "da": {
               "unsafeHTML": "<div class=\"footer\"><div><div><p>Footer content</p></div></div></div>"
             }
-          }
+          },
+          // AI Generated Code by Deloitte + Cursor (BEGIN)
+          "model": "footer"
+          // AI Generated Code by Deloitte + Cursor (END)
         },
         {
           "title": "Fragment",
@@ -194,7 +197,10 @@
             "da": {
               "unsafeHTML": "<div class=\"header\"><div><div><p>Header content</p></div></div></div>"
             }
-          }
+          },
+          // AI Generated Code by Deloitte + Cursor (BEGIN)
+          "model": "header"
+          // AI Generated Code by Deloitte + Cursor (END)
         },
         {
           "title": "Hero",
