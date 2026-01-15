@@ -1,0 +1,63 @@
+/* AI Generated Code by Deloitte + Cursor (BEGIN) */
+.form-thank-you-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.form-thank-you-heading {
+  margin-bottom: 24px;
+}
+
+.form-thank-you-heading h1,
+.form-thank-you-heading h2,
+.form-thank-you-heading h3 {
+  margin: 0;
+  font-size: var(--heading-font-size-xl);
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.form-thank-you-message {
+  margin-bottom: 32px;
+  font-size: var(--body-font-size-l);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.form-thank-you-message p {
+  margin: 0 0 16px;
+}
+
+.form-thank-you-message p:last-child {
+  margin-bottom: 0;
+}
+
+.form-thank-you-action {
+  margin-top: 32px;
+}
+
+.form-thank-you-action a.button {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: var(--body-font-size-m);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .form-thank-you-container {
+    padding: 60px 32px;
+  }
+
+  .form-thank-you-heading h1,
+  .form-thank-you-heading h2,
+  .form-thank-you-heading h3 {
+    font-size: var(--heading-font-size-xxl);
+  }
+
+  .form-thank-you-message {
+    font-size: var(--body-font-size-xl);
+  }
+}
+/* AI Generated Code by Deloitte + Cursor (END) */
