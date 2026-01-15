@@ -201,9 +201,13 @@ export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
   // AI Generated Code by Deloitte + Cursor (BEGIN)
-  const navPath = fragmentOverride
-    ? new URL(fragmentOverride, window.location).pathname
-    : (navMeta ? new URL(navMeta, window.location).pathname : '/nav');
+  let navPath = '/nav';
+  if (navMeta) {
+    navPath = new URL(navMeta, window.location).pathname;
+  }
+  if (fragmentOverride) {
+    navPath = new URL(fragmentOverride, window.location).pathname;
+  }
   // AI Generated Code by Deloitte + Cursor (END)
   const fragment = await loadFragment(navPath);
   // AI Generated Code by Deloitte + Cursor (BEGIN)

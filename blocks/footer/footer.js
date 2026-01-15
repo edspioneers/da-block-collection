@@ -13,9 +13,13 @@ export default async function decorate(block) {
   // load footer as fragment
   const footerMeta = getMetadata('footer');
   // AI Generated Code by Deloitte + Cursor (BEGIN)
-  const footerPath = fragmentOverride
-    ? new URL(fragmentOverride, window.location).pathname
-    : (footerMeta ? new URL(footerMeta, window.location).pathname : '/footer');
+  let footerPath = '/footer';
+  if (footerMeta) {
+    footerPath = new URL(footerMeta, window.location).pathname;
+  }
+  if (fragmentOverride) {
+    footerPath = new URL(fragmentOverride, window.location).pathname;
+  }
   // AI Generated Code by Deloitte + Cursor (END)
   const fragment = await loadFragment(footerPath);
   // AI Generated Code by Deloitte + Cursor (BEGIN)
