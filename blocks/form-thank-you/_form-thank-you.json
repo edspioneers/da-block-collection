@@ -5,7 +5,9 @@
       "id": "form-thank-you",
       "plugins": {
         "da": {
-          "unsafeHTML": "<!-- AI Generated Code by Deloitte + Cursor (BEGIN) --><div class=\"form-thank-you\"><div><div><h1>Thank You!</h1></div></div><div><div><p>Your submission has been received.</p></div></div><div><div><p><a href=\"/\" class=\"button\">Return Home</a></p></div></div></div><!-- AI Generated Code by Deloitte + Cursor (END) -->"
+          "name": "form-thank-you",
+          "rows": 3,
+          "columns": 1
         }
       }
     }
@@ -14,13 +16,13 @@
     {
       "id": "form-thank-you",
       "fields": [
-        {
-          "component": "text",
-          "name": "div:nth-child(1)>div:nth-child(1)>h1",
-          "label": "Heading",
-          "required": true,
-          "valueType": "string"
-        },
+      {
+        "component": "text",
+        "name": "div:nth-child(1)>div:nth-child(1)",
+        "label": "Heading",
+        "required": true,
+        "valueType": "string"
+      },
         {
           "component": "richtext",
           "name": "div:nth-child(2)>div:nth-child(1)",
