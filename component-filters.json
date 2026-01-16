@@ -37,7 +37,7 @@
     ]
   },
   {
-    "id": "aso",
+    "id": "aso-app",
     "components": [
       "aso-item"
     ]
