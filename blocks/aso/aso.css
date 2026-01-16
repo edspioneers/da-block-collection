@@ -1,0 +1,84 @@
+/* AI Generated Code by Deloitte + Cursor (BEGIN) */
+.aso-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--light-color, #f5f5f5);
+  border-radius: 8px;
+}
+
+.aso-title {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--dark-color, #333);
+}
+
+.aso-title h2 {
+  margin: 0;
+  font-size: var(--heading-font-size-xl);
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.aso-developer {
+  margin-bottom: 24px;
+  font-size: var(--body-font-size-m);
+  color: var(--text-color);
+}
+
+.aso-label {
+  font-weight: 700;
+  color: var(--dark-color, #333);
+}
+
+.aso-description {
+  margin-bottom: 24px;
+}
+
+.aso-description h3 {
+  margin: 0 0 12px;
+  font-size: var(--heading-font-size-m);
+  color: var(--dark-color, #333);
+}
+
+.aso-description-content {
+  font-size: var(--body-font-size-m);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.aso-description-content p {
+  margin: 0 0 12px;
+}
+
+.aso-description-content p:last-child {
+  margin-bottom: 0;
+}
+
+.aso-rules {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: var(--background-color, #fff);
+  border-left: 4px solid var(--dark-color, #333);
+  font-size: var(--body-font-size-s);
+}
+
+@media (width >= 900px) {
+  .aso-container {
+    padding: 48px;
+  }
+
+  .aso-title h2 {
+    font-size: var(--heading-font-size-xxl);
+  }
+
+  .aso-developer {
+    font-size: var(--body-font-size-l);
+  }
+
+  .aso-description-content {
+    font-size: var(--body-font-size-l);
+  }
+}
+
+/* AI Generated Code by Deloitte + Cursor (END) */

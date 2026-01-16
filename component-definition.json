@@ -70,6 +70,17 @@
           }
         },
         {
+          "title": "ASO",
+          "id": "aso",
+          "plugins": {
+            "da": {
+              "name": "aso",
+              "rows": 4,
+              "columns": 2
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
@@ -156,8 +167,7 @@
               "rows": 3,
               "columns": 1
             }
-          },
-          "model": "form-thank-you"
+          }
         },
         {
           "title": "Fragment",
