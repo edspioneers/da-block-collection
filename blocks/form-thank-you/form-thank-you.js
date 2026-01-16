@@ -7,8 +7,8 @@ export default async function decorate(block) {
   const rows = [...block.children];
 
   // Expected structure:
-  // Row 1: Heading (h1-h6 or p)
-  // Row 2: Message (text/richtext)
+  // Row 1: Heading
+  // Row 2: Message (richtext)
   // Row 3: Optional button/link
 
   block.classList.add('form-thank-you-container');
@@ -21,12 +21,11 @@ export default async function decorate(block) {
       // Heading row
       const heading = cells[0];
       heading.classList.add('form-thank-you-heading');
-      // Convert to h1 if it's a paragraph
-      const headingText = heading.textContent.trim();
-      if (heading.querySelector('p') && !heading.querySelector('h1, h2, h3, h4, h5, h6')) {
+      // Wrap text in h1 if not already a heading
+      if (!heading.querySelector('h1, h2, h3, h4, h5, h6')) {
         const h1 = document.createElement('h1');
-        h1.textContent = headingText;
-        heading.innerHTML = '';
+        h1.textContent = heading.textContent.trim();
+        heading.textContent = '';
         heading.appendChild(h1);
       }
       block.appendChild(heading);
