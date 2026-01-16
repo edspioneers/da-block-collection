@@ -78,7 +78,8 @@
               "rows": 4,
               "columns": 2
             }
-          }
+          },
+          "model": "aso"
         },
         {
           "title": "Buttons",
