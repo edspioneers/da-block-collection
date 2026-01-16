@@ -1,0 +1,38 @@
+{
+  "definitions": [
+    {
+      "title": "ASO",
+      "id": "aso",
+      "plugins": {
+        "da": {
+          "name": "aso",
+          "rows": 1,
+          "columns": 2
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "aso",
+      "fields": [
+        {
+          "component": "text",
+          "name": "div:nth-child(1)",
+          "value": "",
+          "label": "Key",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-child(2)",
+          "value": "",
+          "label": "Value",
+          "valueType": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
