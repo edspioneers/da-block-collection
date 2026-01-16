@@ -118,6 +118,17 @@
           }
         },
         {
+          "title": "Code",
+          "id": "code",
+          "plugins": {
+            "da": {
+              "name": "code",
+              "rows": 2,
+              "columns": 1
+            }
+          }
+        },
+        {
           "title": "Columns",
           "id": "columns",
           "plugins": {

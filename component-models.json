@@ -182,6 +182,24 @@
     ]
   },
   {
+    "id": "code",
+    "fields": [
+      {
+        "component": "text",
+        "name": "div:nth-child(1)>div:nth-child(1)",
+        "label": "Language",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "div:nth-child(2)>div:nth-child(1)",
+        "label": "Code",
+        "required": true,
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
