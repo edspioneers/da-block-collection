@@ -12,7 +12,7 @@ export default async function decorate(block) {
 
   rows.forEach((row) => {
     row.classList.add('aso-item');
-    
+
     const cells = row.querySelectorAll(':scope > div');
     if (cells[0]) {
       cells[0].classList.add('aso-label');
