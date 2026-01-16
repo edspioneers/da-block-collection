@@ -69,5 +69,10 @@
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "aso",
+      "components": []
+    }
+  ]
 }
