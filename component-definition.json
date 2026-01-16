@@ -75,11 +75,22 @@
           "plugins": {
             "da": {
               "name": "aso",
-              "rows": 4,
+                "rows": 1,
               "columns": 2
             }
           }
         },
+          {
+            "title": "ASO Item",
+            "id": "aso-item",
+            "plugins": {
+              "da": {
+                "name": "aso-item",
+                "rows": 1,
+                "columns": 2
+              }
+            }
+          },
         {
           "title": "Buttons",
           "id": "buttons",
