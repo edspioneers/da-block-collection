@@ -81,6 +81,17 @@
           }
         },
         {
+          "title": "Buttons",
+          "id": "buttons",
+          "plugins": {
+            "da": {
+              "name": "buttons",
+              "rows": 1,
+              "columns": 2
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "plugins": {

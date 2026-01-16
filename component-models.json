@@ -116,6 +116,48 @@
     ]
   },
   {
+    "id": "buttons",
+    "fields": [
+      {
+        "component": "text",
+        "name": "div:nth-child(1)>div:nth-child(1)>a[href]",
+        "label": "Button URL",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "div:nth-child(1)>div:nth-child(1)>a",
+        "label": "Button Text",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Button Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "Tertiary",
+            "value": "tertiary"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cards",
     "fields": [
       {
