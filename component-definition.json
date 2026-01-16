@@ -70,27 +70,27 @@
           }
         },
         {
-          "title": "ASO",
-          "id": "aso",
+          "title": "ASO App",
+          "id": "aso-app",
           "plugins": {
             "da": {
-              "name": "aso",
-                "rows": 1,
+              "name": "aso-app",
+              "rows": 1,
               "columns": 2
             }
           }
         },
-          {
-            "title": "ASO Item",
-            "id": "aso-item",
-            "plugins": {
-              "da": {
-                "name": "aso-item",
-                "rows": 1,
-                "columns": 2
-              }
+        {
+          "title": "ASO Item",
+          "id": "aso-item",
+          "plugins": {
+            "da": {
+              "name": "aso-item",
+              "rows": 1,
+              "columns": 2
             }
-          },
+          }
+        },
         {
           "title": "Buttons",
           "id": "buttons",

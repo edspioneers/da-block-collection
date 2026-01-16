@@ -85,21 +85,21 @@
     ]
   },
   {
-      "id": "aso-item",
+    "id": "aso-item",
     "fields": [
       {
         "component": "text",
-          "name": "div:nth-child(1)",
-          "label": "Label",
+        "name": "div:nth-child(1)",
+        "label": "Label",
         "valueType": "string"
       },
       {
         "component": "richtext",
-          "name": "div:nth-child(2)",
-          "label": "Value",
+        "name": "div:nth-child(2)",
+        "label": "Value",
         "required": true,
         "valueType": "string"
-      },
+      }
     ]
   },
   {
