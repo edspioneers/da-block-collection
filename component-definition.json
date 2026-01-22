@@ -270,6 +270,17 @@
           }
         },
         {
+          "title": "Thank You Message",
+          "id": "thankyoumessage",
+          "plugins": {
+            "da": {
+              "name": "thankyoumessage",
+              "rows": 5,
+              "columns": 1
+            }
+          }
+        },
+        {
           "title": "Video",
           "id": "video",
           "plugins": {

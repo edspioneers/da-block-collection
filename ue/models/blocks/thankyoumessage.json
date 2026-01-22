@@ -1,0 +1,60 @@
+{
+  "definitions": [
+    {
+      "title": "Thank You Message",
+      "id": "thankyoumessage",
+      "plugins": {
+        "da": {
+          "name": "thankyoumessage",
+          "rows": 5,
+          "columns": 1
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "thankyoumessage",
+      "fields": [
+        {
+          "component": "reference",
+          "name": "div:nth-of-type(1)",
+          "label": "Icon/Image",
+          "valueType": "string",
+          "description": "Optional success icon or image"
+        },
+        {
+          "component": "text",
+          "name": "div:nth-of-type(2)",
+          "label": "Heading",
+          "required": true,
+          "valueType": "string",
+          "description": "Main thank you heading"
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-of-type(3)",
+          "label": "Message",
+          "required": true,
+          "valueType": "string",
+          "description": "Thank you message body"
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-of-type(4)",
+          "label": "Action Button",
+          "valueType": "string",
+          "description": "Call-to-action link (e.g., Back to Home)"
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-of-type(5)",
+          "label": "Additional Info",
+          "valueType": "string",
+          "description": "Optional additional information or footer text"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
